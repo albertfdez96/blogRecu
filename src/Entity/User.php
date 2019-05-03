@@ -52,7 +52,7 @@ class User implements UserInterface
         $this->plainPassword = $plainPassword;
     }
     /**
-     * @ORM\Column(type="string", length=100, nullable=true)
+     * @ORM\Column(type="string", length=100, nullable=true, unique=true)
      */
     private $username;
 
@@ -117,7 +117,7 @@ class User implements UserInterface
      */
     public function getUsername(): string
     {
-        return (string) $this->email;
+        return (string) $this->username;
     }
 
     /**

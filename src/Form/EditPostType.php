@@ -14,7 +14,7 @@ use FOS\CKEditorBundle\Config\CKEditorConfiguration;
 use App\Form\Type\TagsInputType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class PostType extends AbstractType
+class EditPostType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -35,13 +35,6 @@ class PostType extends AbstractType
                 'label' => 'Contents',
                 'attr'=>[
                     'class'=>'form-control'
-                ]
-            ])
-            ->add('created_at', DateTimeType::class, [
-                'label' => 'Published at',
-                'widget'=>'single_text',
-                'attr'=>[
-                    'class'=>'form-control js-datepicker'
                 ]
             ])
             ->add('tags', TagsInputType::class, [

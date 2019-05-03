@@ -43,6 +43,10 @@ class Tag
         return $this->tag;
     }
 
+    public function __toString(){
+        return $this->tag;
+    }
+
     public function setTag(string $tag): self
     {
         $this->tag = $tag;

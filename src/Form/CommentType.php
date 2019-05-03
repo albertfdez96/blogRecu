@@ -14,7 +14,7 @@ use FOS\CKEditorBundle\Config\CKEditorConfiguration;
 use App\Form\Type\TagsInputType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class PostType extends AbstractType
+class CommentType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -23,38 +23,15 @@ class PostType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('title', null, [
+            ->add('comment', TextType::class, [
                 'attr' => ['autofocus' => true],
-                'label' => 'Title',
+                'label' => 'Escribe aqui tu comentario',
                 'attr'=>[
                     'class'=>'form-control'
                 ]
             ])
-            ->add('content', null, [
-                'attr' => ['rows' => 20],
-                'label' => 'Contents',
-                'attr'=>[
-                    'class'=>'form-control'
-                ]
-            ])
-            ->add('created_at', DateTimeType::class, [
-                'label' => 'Published at',
-                'widget'=>'single_text',
-                'attr'=>[
-                    'class'=>'form-control js-datepicker'
-                ]
-            ])
-            ->add('tags', TagsInputType::class, [
-                'label' => 'Tags',
-
-                'required' => false,
-                'attr'=>[
-                    'data-role'=>'tagsinput',
-                    'class'=>'form-control'
-                ]
-            ])
-            ->add('Signup', SubmitType::class,
-                ['label'=>'Save',
+            ->add('publicar', SubmitType::class,
+                ['label'=>'Publicar',
                     'attr'=>[
                         'class'=>'form-submit btn btn-success'
                     ]])
@@ -69,7 +46,7 @@ class PostType extends AbstractType
 
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(['data_class'=>'App\Entity\Post']);
+        $resolver->setDefaults(['data_class'=>'App\Entity\Comment']);
 
     }
 }
