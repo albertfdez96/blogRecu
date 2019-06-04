@@ -222,6 +222,6 @@ class __TwigTemplate_ad0158aff98397ce74deca97f20a49c6ea9697cddd777889dd8e6249743
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "/home/linux/www/projects/blog/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+", "@Twig/layout.html.twig", "/home/linux/www/blogRecu/blog4/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }

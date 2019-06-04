@@ -54,7 +54,7 @@ class __TwigTemplate_86759ae4cb173120f10d41691acef18c705a649ac328eeacd4fa9ba301b
 
     }
 
-    // line 2
+    // line 3
     public function block_error($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -71,7 +71,7 @@ class __TwigTemplate_86759ae4cb173120f10d41691acef18c705a649ac328eeacd4fa9ba301b
 
     }
 
-    // line 3
+    // line 5
     public function block_stylesheets($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -80,10 +80,13 @@ class __TwigTemplate_86759ae4cb173120f10d41691acef18c705a649ac328eeacd4fa9ba301b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 4
-        echo "    ";
+        // line 6
+        echo "
+    ";
+        // line 7
         $this->displayParentBlock("stylesheets", $context, $blocks);
         echo "
+
     <style type=\"text/css\">
         body {
         }
@@ -91,12 +94,7 @@ class __TwigTemplate_86759ae4cb173120f10d41691acef18c705a649ac328eeacd4fa9ba301b
             background-color:#C9C9C9;
             padding: 20px;
         }
-        input{
 
-        }
-        label{
-
-        }
     </style>
 ";
         
@@ -117,43 +115,51 @@ class __TwigTemplate_86759ae4cb173120f10d41691acef18c705a649ac328eeacd4fa9ba301b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 21
-        echo "    <div class=\"container\">
+        echo "
+    <div class=\"container\">
+
         <div class=\"col-lg-10 box-form\">
-            <h1>";
-        // line 23
-        echo twig_escape_filter($this->env, (isset($context["title"]) || array_key_exists("title", $context) ? $context["title"] : (function () { throw new RuntimeError('Variable "title" does not exist.', 23, $this->source); })()), "html", null, true);
-        echo " User</h1>
+
+            <h1>Editar Usuario</h1>
+
             ";
-        // line 24
+        // line 28
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 25
-            echo "                <div class=\"col-lg-8 box-form\">
+            // line 29
+            echo "
+                <div class=\"col-lg-8 box-form\">
+
                     ";
-            // line 26
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 26, $this->source); })()), 'form_start');
+            // line 32
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 32, $this->source); })()), 'form_start');
             echo "
                     ";
-            // line 27
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 27, $this->source); })()), 'widget');
+            // line 33
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 33, $this->source); })()), 'widget');
             echo "
                     <input type=\"submit\" class=\"btn btn-success\" value=\"";
-            // line 28
-            echo twig_escape_filter($this->env, (isset($context["title"]) || array_key_exists("title", $context) ? $context["title"] : (function () { throw new RuntimeError('Variable "title" does not exist.', 28, $this->source); })()), "html", null, true);
+            // line 34
+            echo twig_escape_filter($this->env, (isset($context["title"]) || array_key_exists("title", $context) ? $context["title"] : (function () { throw new RuntimeError('Variable "title" does not exist.', 34, $this->source); })()), "html", null, true);
             echo "\" onclick=\"return confirm('¿Esta seguro?')\">
                     ";
-            // line 29
-            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 29, $this->source); })()), 'errors');
+            // line 35
+            echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 35, $this->source); })()), 'errors');
             echo "
                     ";
-            // line 30
-            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 30, $this->source); })()), 'form_end');
+            // line 36
+            echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 36, $this->source); })()), 'form_end');
             echo "
+
                 </div>
+
             ";
         }
-        // line 33
-        echo "        </div>
+        // line 41
+        echo "
+        </div>
+
     </div>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -175,15 +181,19 @@ class __TwigTemplate_86759ae4cb173120f10d41691acef18c705a649ac328eeacd4fa9ba301b
 
     public function getDebugInfo()
     {
-        return array (  155 => 33,  149 => 30,  145 => 29,  141 => 28,  137 => 27,  133 => 26,  130 => 25,  128 => 24,  124 => 23,  120 => 21,  111 => 20,  84 => 4,  75 => 3,  58 => 2,  27 => 1,);
+        return array (  158 => 41,  150 => 36,  146 => 35,  142 => 34,  138 => 33,  134 => 32,  129 => 29,  127 => 28,  118 => 21,  109 => 20,  87 => 7,  84 => 6,  75 => 5,  58 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
+
 {% block error %}{% endblock %}
+
 {% block stylesheets %}
+
     {{ parent() }}
+
     <style type=\"text/css\">
         body {
         }
@@ -191,29 +201,36 @@ class __TwigTemplate_86759ae4cb173120f10d41691acef18c705a649ac328eeacd4fa9ba301b
             background-color:#C9C9C9;
             padding: 20px;
         }
-        input{
 
-        }
-        label{
-
-        }
     </style>
 {% endblock %}
+
 {% block body %}
+
     <div class=\"container\">
+
         <div class=\"col-lg-10 box-form\">
-            <h1>{{ title }} User</h1>
+
+            <h1>Editar Usuario</h1>
+
             {% if is_granted(\"ROLE_ADMIN\") %}
+
                 <div class=\"col-lg-8 box-form\">
+
                     {{ form_start(form) }}
                     {{ form_widget(form) }}
                     <input type=\"submit\" class=\"btn btn-success\" value=\"{{ title }}\" onclick=\"return confirm('¿Esta seguro?')\">
                     {{ form_errors(form) }}
                     {{ form_end(form) }}
+
                 </div>
+
             {% endif %}
+
         </div>
+
     </div>
-{% endblock %}", "admin/edit.html.twig", "/home/linux/www/projects/blog/templates/admin/edit.html.twig");
+
+{% endblock %}", "admin/edit.html.twig", "/home/linux/www/blogRecu/blog4/templates/admin/edit.html.twig");
     }
 }

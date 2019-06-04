@@ -1123,6 +1123,6 @@ class __TwigTemplate_2b79240a2ef09b0e8a5021f12bf470da0d070dfaa4995cfc5699a8b504d
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "/home/linux/www/projects/blog/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "/home/linux/www/blogRecu/blog4/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
     }
 }

@@ -1,8 +1,26 @@
 {% extends 'base.html.twig' %}
+
 {% block stylessheets %}
+
     {{ parent() }}
+
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
 {% endblock %}
+
+
 {% block body %}
-    <h1>Inicio</h1>
+
+
+    <h1>Blog</h1>
+    <h2>Albert Ollé Fernández</h2>
+
+    {% if app.user is null %}
+    <h3>Inicia Sesion o Registrate</h3>
+    {% else %}
+        <h3>Crea un post o miralos</h3>
+
+    {% endif %}
+
+
 {% endblock %}

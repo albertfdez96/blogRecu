@@ -364,6 +364,6 @@ class __TwigTemplate_323c75bdb7c82608908a2644c7cee671c9c922e1d28cdef7d5c463aadf6
         {% endif %}
     </script>
 {% endblock %}
-", "@FOSCKEditor/Form/ckeditor_widget.html.twig", "/home/linux/www/projects/blog/vendor/friendsofsymfony/ckeditor-bundle/src/Resources/views/Form/ckeditor_widget.html.twig");
+", "@FOSCKEditor/Form/ckeditor_widget.html.twig", "/home/linux/www/blogRecu/blog4/vendor/friendsofsymfony/ckeditor-bundle/src/Resources/views/Form/ckeditor_widget.html.twig");
     }
 }

@@ -32,8 +32,9 @@ class UserType extends AbstractType
             ->add('email', EmailType::class,[
                 'required' =>'required',
                 'attr' =>[
+
                     'class' => 'form-email form-control',
-                    'placeholder' => 'Email@email'
+                    'placeholder' => '...@email.com'
                 ]
             ])
             ->add('plainpassword',RepeatedType::class,[

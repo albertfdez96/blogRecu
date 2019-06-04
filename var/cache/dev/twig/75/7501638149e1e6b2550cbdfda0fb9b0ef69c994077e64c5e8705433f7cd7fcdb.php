@@ -53,7 +53,7 @@ class __TwigTemplate_bc9340df30186383dc2c46c11c34f28b82b3edd3aa43f7d1628f8e64d38
 
     }
 
-    // line 2
+    // line 3
     public function block_stylessheets($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -62,14 +62,18 @@ class __TwigTemplate_bc9340df30186383dc2c46c11c34f28b82b3edd3aa43f7d1628f8e64d38
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylessheets"));
 
-        // line 3
-        echo "    ";
+        // line 4
+        echo "
+    ";
+        // line 5
         $this->displayParentBlock("stylessheets", $context, $blocks);
         echo "
+
     <link rel=\"stylesheet\" href=\"";
-        // line 4
+        // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/home.css"), "html", null, true);
         echo "\">
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -79,7 +83,7 @@ class __TwigTemplate_bc9340df30186383dc2c46c11c34f28b82b3edd3aa43f7d1628f8e64d38
 
     }
 
-    // line 6
+    // line 12
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -88,8 +92,27 @@ class __TwigTemplate_bc9340df30186383dc2c46c11c34f28b82b3edd3aa43f7d1628f8e64d38
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 7
-        echo "    <h1>Inicio</h1>
+        // line 13
+        echo "
+
+    <h1>Blog</h1>
+    <h2>Albert Ollé Fernández</h2>
+
+    ";
+        // line 18
+        if ((null === twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 18, $this->source); })()), "user", []))) {
+            // line 19
+            echo "    <h3>Inicia Sesion o Registrate</h3>
+    ";
+        } else {
+            // line 21
+            echo "        <h3>Crea un post o miralos</h3>
+
+    ";
+        }
+        // line 24
+        echo "
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -111,18 +134,36 @@ class __TwigTemplate_bc9340df30186383dc2c46c11c34f28b82b3edd3aa43f7d1628f8e64d38
 
     public function getDebugInfo()
     {
-        return array (  92 => 7,  83 => 6,  71 => 4,  66 => 3,  57 => 2,  27 => 1,);
+        return array (  114 => 24,  109 => 21,  105 => 19,  103 => 18,  96 => 13,  87 => 12,  74 => 7,  69 => 5,  66 => 4,  57 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
+
 {% block stylessheets %}
+
     {{ parent() }}
+
     <link rel=\"stylesheet\" href=\"{{ asset('css/home.css') }}\">
+
 {% endblock %}
+
+
 {% block body %}
-    <h1>Inicio</h1>
-{% endblock %}", "home/home.html.twig", "/home/linux/Imatges/blog/templates/home/home.html.twig");
+
+
+    <h1>Blog</h1>
+    <h2>Albert Ollé Fernández</h2>
+
+    {% if app.user is null %}
+    <h3>Inicia Sesion o Registrate</h3>
+    {% else %}
+        <h3>Crea un post o miralos</h3>
+
+    {% endif %}
+
+
+{% endblock %}", "home/home.html.twig", "/home/linux/www/blogRecu/blog4/templates/home/home.html.twig");
     }
 }

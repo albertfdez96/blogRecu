@@ -119,6 +119,6 @@ class __TwigTemplate_85eba9bce52743c09c279d3e22946a21b8e85203872f9050f3d9393860b
         {{ form_errors(form) }}
         {{ form_end(form) }}
     </div>
-{% endblock %}", "user/regform.html.twig", "/home/linux/www/projects/blog/templates/user/regform.html.twig");
+{% endblock %}", "user/regform.html.twig", "/home/linux/www/blogRecu/blog4/templates/user/regform.html.twig");
     }
 }

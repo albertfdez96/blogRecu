@@ -54,7 +54,7 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
 
     }
 
-    // line 2
+    // line 3
     public function block_stylesheets($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -63,28 +63,29 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 3
-        echo "    ";
+        // line 4
+        echo "
+    ";
+        // line 5
         $this->displayParentBlock("stylesheets", $context, $blocks);
         echo "
+
     <link rel=\"stylesheet\" href=\"";
-        // line 4
+        // line 7
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/bootstrap-tagsinput.css"), "html", null, true);
         echo "\">
+
     <style type=\"text/css\" >
+
         body {
         }
         form                                                                                                                                                    {
             background-color:#C9C9C9;
             padding: 20px;
         }
-        input{
 
-        }
-        label{
-
-        }
     </style>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -94,7 +95,7 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
 
     }
 
-    // line 20
+    // line 22
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -103,42 +104,55 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 21
-        echo "    ";
-        $this->displayParentBlock("body", $context, $blocks);
+        // line 23
         echo "
-    <div class=\"col-lg-6 box-form\">
-    <h1>New post</h1>
     ";
         // line 24
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 24, $this->source); })()), 'form_start');
-        echo "
-    ";
-        // line 25
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 25, $this->source); })()), "title", []), 'row');
-        echo "
-    ";
-        // line 26
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 26, $this->source); })()), "content", []), 'row');
-        echo "
-    ";
-        // line 27
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 27, $this->source); })()), "created_at", []), 'row');
-        echo "
-    ";
-        // line 28
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 28, $this->source); })()), "tags", []), 'row');
-        echo "
-    ";
-        // line 29
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 29, $this->source); })()), 'errors');
-        echo "
-    ";
-        // line 30
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 30, $this->source); })()), 'form_end');
+        $this->displayParentBlock("body", $context, $blocks);
         echo "
 
+    <div class=\"col-lg-6 box-form\">
+
+    <h1>Nuevo post</h1>
+
+    ";
+        // line 30
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 30, $this->source); })()), 'form_start');
+        echo "
+
+    ";
+        // line 32
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 32, $this->source); })()), "title", []), 'row');
+        echo "
+
+    ";
+        // line 34
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 34, $this->source); })()), "content", []), 'row');
+        echo "
+
+    ";
+        // line 36
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 36, $this->source); })()), "created_at", []), 'row');
+        echo "
+
+    ";
+        // line 38
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 38, $this->source); })()), "tags", []), 'row');
+        echo "
+
+    ";
+        // line 40
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 40, $this->source); })()), 'errors');
+        echo "
+
+    ";
+        // line 42
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 42, $this->source); })()), 'form_end');
+        echo "
+
+
     </div>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -148,7 +162,7 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
 
     }
 
-    // line 34
+    // line 49
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -157,17 +171,21 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 35
-        echo "    ";
+        // line 50
+        echo "
+    ";
+        // line 51
         $this->displayParentBlock("javascripts", $context, $blocks);
         echo "
+
     <script src=\"";
-        // line 36
+        // line 53
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap-tagsinput.js"), "html", null, true);
         echo "\"></script>
     <script src=\"https://cloud.tinymce.com/5/tinymce.min.js\"></script>
 
     <script>
+        
         tinymce.init({
             selector:'#post_content'
         });
@@ -193,55 +211,73 @@ class __TwigTemplate_c7b74408967b515d1433fec03c38c0e75412afec16bb8c034d614e8833b
 
     public function getDebugInfo()
     {
-        return array (  166 => 36,  161 => 35,  152 => 34,  138 => 30,  134 => 29,  130 => 28,  126 => 27,  122 => 26,  118 => 25,  114 => 24,  107 => 21,  98 => 20,  72 => 4,  67 => 3,  58 => 2,  27 => 1,);
+        return array (  183 => 53,  178 => 51,  175 => 50,  166 => 49,  150 => 42,  145 => 40,  140 => 38,  135 => 36,  130 => 34,  125 => 32,  120 => 30,  111 => 24,  108 => 23,  99 => 22,  75 => 7,  70 => 5,  67 => 4,  58 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
+
 {% block stylesheets %}
+
     {{ parent() }}
+
     <link rel=\"stylesheet\" href=\"{{ asset(\"css/bootstrap-tagsinput.css\") }}\">
+
     <style type=\"text/css\" >
+
         body {
         }
         form                                                                                                                                                    {
             background-color:#C9C9C9;
             padding: 20px;
         }
-        input{
 
-        }
-        label{
-
-        }
     </style>
+
 {% endblock %}
+
 {% block body %}
+
     {{ parent() }}
+
     <div class=\"col-lg-6 box-form\">
-    <h1>New post</h1>
+
+    <h1>Nuevo post</h1>
+
     {{form_start(form)}}
+
     {{ form_row(form.title) }}
+
     {{ form_row(form.content) }}
+
     {{ form_row(form.created_at) }}
+
     {{ form_row(form.tags) }}
+
     {{ form_errors(form) }}
+
     {{ form_end(form) }}
 
+
     </div>
+
 {%endblock%}
+
 {% block javascripts %}
+
     {{ parent() }}
+
     <script src=\"{{ asset(\"js/bootstrap-tagsinput.js\") }}\"></script>
     <script src=\"https://cloud.tinymce.com/5/tinymce.min.js\"></script>
 
     <script>
+        
         tinymce.init({
             selector:'#post_content'
         });
     </script>
 {% endblock %}
-", "post/post.html.twig", "/home/linux/www/projects/blog/templates/post/post.html.twig");
+", "post/post.html.twig", "/home/linux/www/blogRecu/blog4/templates/post/post.html.twig");
     }
 }

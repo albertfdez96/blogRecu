@@ -80,26 +80,39 @@ class __TwigTemplate_2b8ed7bf3db05e4adccd5dd18eccaf7962b547b6905dd61e22f2414a569
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <div class=\"container\">
+        echo "
+    <div class=\"container\">
+
         <div class=\"col-lg-4 box-form\">
-            <h2>Login</h2>
+
+            <h2>Iniciar sesion</h2>
+
             <form action=\"";
-        // line 9
+        // line 13
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\" method=\"post\">
+
                 <div class=\"form-group\">
+
                     <input type=\"text\" id=\"email\" name=\"_username\" class=\"form-control\" value=\"";
-        // line 11
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 11, $this->source); })()), "html", null, true);
+        // line 17
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 17, $this->source); })()), "html", null, true);
         echo "\"/>
                 </div>
+
                 <div class=\"form-group\">
+
                     <input type=\"password\" id=\"password\" name=\"_password\" class=\"form-control\" />
                 </div>
+
                 <button type=\"submit\" class=\"btn btn-success\">Login</button>
+
             </form>
         </div>
+
+
     </div>
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -121,7 +134,7 @@ class __TwigTemplate_2b8ed7bf3db05e4adccd5dd18eccaf7962b547b6905dd61e22f2414a569
 
     public function getDebugInfo()
     {
-        return array (  93 => 11,  88 => 9,  83 => 6,  74 => 5,  57 => 3,  27 => 1,);
+        return array (  99 => 17,  92 => 13,  83 => 6,  74 => 5,  57 => 3,  27 => 1,);
     }
 
     public function getSourceContext()
@@ -131,20 +144,33 @@ class __TwigTemplate_2b8ed7bf3db05e4adccd5dd18eccaf7962b547b6905dd61e22f2414a569
 {% block error %}{% endblock %}
 
 {% block body %}
+
     <div class=\"container\">
+
         <div class=\"col-lg-4 box-form\">
-            <h2>Login</h2>
+
+            <h2>Iniciar sesion</h2>
+
             <form action=\"{{ path('app_login') }}\" method=\"post\">
+
                 <div class=\"form-group\">
+
                     <input type=\"text\" id=\"email\" name=\"_username\" class=\"form-control\" value=\"{{ last_username }}\"/>
                 </div>
+
                 <div class=\"form-group\">
+
                     <input type=\"password\" id=\"password\" name=\"_password\" class=\"form-control\" />
                 </div>
+
                 <button type=\"submit\" class=\"btn btn-success\">Login</button>
+
             </form>
         </div>
+
+
     </div>
-{% endblock %}", "user/login.html.twig", "/home/linux/www/projects/blog/templates/user/login.html.twig");
+
+{% endblock %}", "user/login.html.twig", "/home/linux/www/blogRecu/blog4/templates/user/login.html.twig");
     }
 }
